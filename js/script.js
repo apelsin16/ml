@@ -7,10 +7,10 @@ var instance = M.Collapsible.init(elem, {
 $(document).ready(function(){
   $('.sidenav').sidenav({
     menuWidth: 250,
-    closeOnClick: true
-   
+    closeOnClick: true   
   });
-  
+  $('.carousel').carousel();
+
 });
 
 
