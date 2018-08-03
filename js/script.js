@@ -8,7 +8,7 @@ var instance = M.Collapsible.init(elem, {
 
 $(document).ready(function(){
   $('.sidenav').sidenav({
-    menuWidth: 300,
+    
     closeOnClick: true
    
   });
