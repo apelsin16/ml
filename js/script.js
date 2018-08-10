@@ -9,7 +9,7 @@ $(document).ready(function(){
   $('.collapsible.expandable').collapsible();
 
   $.ajax({
-      url: './data.json'
+      url: 'data.json'
   }).done(function (data) {
       var json = JSON.parse(data);
       console.log(json);
