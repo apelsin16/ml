@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
+    
     <title>ReCom</title>
 </head>
 
@@ -78,10 +79,12 @@
 
 
     <main>
-        <h2 class='center'>Услуги</h2>
-        <ul class="collapsible  expandable">
+        <h2 class='center'>Мы предлагаем:</h2>
+        <div id="container"></div>
+
+        <!-- <ul class="collapsible  expandable">
             <li>
-                <div class="collapsible-header">Оборудование технологическое</div>
+                <h3 class="collapsible-header">Оборудование технологическое</h3>
                 <div class="collapsible-body">
                     <span>Et mollit sunt duis sint voluptate officia commodo tempor excepteur do sint consectetur. Labore cillum
                         ullamco Lorem in. Aute voluptate exercitation dolore minim esse elit enim aute dolor dolor. Mollit
@@ -90,7 +93,7 @@
                 </div>
             </li>
             <li>
-                <div class="collapsible-header">Электротехника</div>
+                <h3 class="collapsible-header">Электротехника</h3>
                 <div class="collapsible-body">
                     <span>Culpa occaecat cupidatat incididunt do aliqua esse pariatur laboris adipisicing labore. Culpa veniam
                         anim do esse est consequat in mollit ea aliquip ipsum reprehenderit laborum incididunt. Fugiat veniam
@@ -101,7 +104,7 @@
                 </div>
             </li>
             <li>
-                <div class="collapsible-header">Автоматизация</div>
+                <h3 class="collapsible-header">Автоматизация</h3>
                 <div class="collapsible-body">
                     <span>Lorem quis aliquip consequat velit consectetur magna eu duis. Exercitation ut commodo ullamco aute voluptate
                         dolore Lorem Lorem officia reprehenderit amet quis cillum. Sint ipsum est voluptate amet enim nulla
@@ -109,7 +112,7 @@
                 </div>
             </li>
             <li>
-                <div class="collapsible-header">Модернизация</div>
+                <h3 class="collapsible-header">Модернизация</h3>
                 <div class="collapsible-body">
                     <span>Lorem quis aliquip consequat velit consectetur magna eu duis. Exercitation ut commodo ullamco aute voluptate
                         dolore Lorem Lorem officia reprehenderit amet quis cillum. Sint ipsum est voluptate amet enim nulla
@@ -117,7 +120,7 @@
                 </div>
             </li>
             <li>
-                <div class="collapsible-header">Техногогия производства</div>
+                <h3 class="collapsible-header">Техногогия производства</h3>
                 <div class="collapsible-body">
                     <span>Lorem quis aliquip consequat velit consectetur magna eu duis. Exercitation ut commodo ullamco aute voluptate
                         dolore Lorem Lorem officia reprehenderit amet quis cillum. Sint ipsum est voluptate amet enim nulla
@@ -125,7 +128,7 @@
                 </div>
             </li>
             <li>
-                <div class="collapsible-header">Управление проектами</div>
+                <h3 class="collapsible-header">Управление проектами</h3>
                 <div class="collapsible-body">
                     <span>Lorem quis aliquip consequat velit consectetur magna eu duis. Exercitation ut commodo ullamco aute voluptate
                         dolore Lorem Lorem officia reprehenderit amet quis cillum. Sint ipsum est voluptate amet enim nulla
@@ -133,7 +136,7 @@
                 </div>
             </li>
             <li>
-                <div class="collapsible-header">Экономика энергетики</div>
+                <h3 class="collapsible-header">Экономика энергетики</h3>
                 <div class="collapsible-body">
                     <span>Lorem quis aliquip consequat velit consectetur magna eu duis. Exercitation ut commodo ullamco aute voluptate
                         dolore Lorem Lorem officia reprehenderit amet quis cillum. Sint ipsum est voluptate amet enim nulla
@@ -141,7 +144,7 @@
                 </div>
             </li>
             <li>
-                <div class="collapsible-header">Области специализации</div>
+                <h3 class="collapsible-header">Области специализации</h3>
                 <div class="collapsible-body">
                     <span>Lorem quis aliquip consequat velit consectetur magna eu duis. Exercitation ut commodo ullamco aute voluptate
                         dolore Lorem Lorem officia reprehenderit amet quis cillum. Sint ipsum est voluptate amet enim nulla
@@ -149,12 +152,36 @@
                 </div>
             </li>
 
-        </ul>
+        </ul> -->
+        <!-- <div  id="container"></div>
+        <script type="text/template" id="template-accordeon">
+            
+            <ul class="collapsible  expandable">
+                <!-- <% items.forEach(function(item) { %> -->
+                    <!-- <li> -->
+                        <!-- <h3 class="collapsible-header"><%-title%></h3> -->
+                        <!-- <div class="collapsible-body"><span><%-body%></span></div> -->
+                    <!-- </li> -->
+                    <!-- <% }); %> -->
+            <!-- </ul> -->
+        
+            <!-- </script> -->
     </main>
     <footer class="footer-copyright center">© 2018 Copyright Apelsin:)</footer>
-
+    <script id="services" type="text/x-handlebars-template">
+        <ul class="collapsible expandable">
+            {{#each articles}}
+            <li>
+                <h3 class="collapsible-header">{{title}}</h3>
+                <div class="collapsible-body">{{body}}</div>
+            </li>
+            {{/each}}
+        </ul>
+    </script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
+    <!-- <script src="./js/lodash.js"></script> -->
+    <script src="./js/handlebars.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
