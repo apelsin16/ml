@@ -2,18 +2,39 @@
 (function(){
 $(document).ready(function(){
 
-    var container = $('#container');
 
-    $.ajax({
-        url: 'data.json'
-    }).done(function (data) {
-        var json = JSON.parse(data);
-        console.log(json);
-        var templateScript = $('services').html();
-        var template = Handlebars.compile(templateScript);
-        var html    = template(json);
-        container.append(html);
-    })
+    function createInfoBlock () {
+        const container = $('#container');
+
+        fetch('data.json')
+            .then(function (response) {
+                if (response.ok) {
+                    return response.json();
+                }
+                throw new Error('Error during fetch');
+            })
+            .then(function (data) {
+                const json = JSON.parse(data);
+                console.log(json);
+                const templateScript = $('services').html();
+                const template = Handlebars.compile(templateScript);
+                const html = template(json);
+                container.append(html);
+            })
+    };
+
+    createInfoBlock();
+
+    // $.ajax({
+    //     url: 'data.json'
+    // }).done(function (data) {
+    //     var json = JSON.parse(data);
+    //     console.log(json);
+    //     var templateScript = $('services').html();
+    //     var template = Handlebars.compile(templateScript);
+    //     var html    = template(json);
+    //     container.append(html);
+    // })
 
     $('.sidenav').sidenav({
     menuWidth: 250,
