@@ -1,43 +1,6 @@
 
 (function(){
 
-    // const data  = {
-    //     "articles": [
-    //         {
-    //             "title": "Оборудование технологическое",
-    //             "body": "Et mollit sunt duis sint voluptate officia commodo tempor excepteur do sint consectetur. Labore cillum ullamco Lorem in. Aute voluptate exercitation dolore minim esse elit enim aute dolor dolor. Mollit aute ea aute anim eiusmod eiusmod adipisicing non aliquip velit consequat sunt consectetur. Lorem mollit consequat nulla sit proident culpa in Lorem nisi."
-    //         },
-    //         {
-    //             "title": "Электротехника",
-    //             "body": "Et mollit sunt duis sint voluptate officia commodo tempor excepteur do sint consectetur. Labore cillum ullamco Lorem in. Aute voluptate exercitation dolore minim esse elit enim aute dolor dolor. Mollit aute ea aute anim eiusmod eiusmod adipisicing non aliquip velit consequat sunt consectetur. Lorem mollit consequat nulla sit proident culpa in Lorem nisi."
-    //         },
-    //         {
-    //             "title": "Автоматизация",
-    //             "body": "Et mollit sunt duis sint voluptate officia commodo tempor excepteur do sint consectetur. Labore cillum ullamco Lorem in. Aute voluptate exercitation dolore minim esse elit enim aute dolor dolor. Mollit aute ea aute anim eiusmod eiusmod adipisicing non aliquip velit consequat sunt consectetur. Lorem mollit consequat nulla sit proident culpa in Lorem nisi."
-    //         },
-    //         {
-    //             "title": "Модернизация",
-    //             "body": "Et mollit sunt duis sint voluptate officia commodo tempor excepteur do sint consectetur. Labore cillum ullamco Lorem in. Aute voluptate exercitation dolore minim esse elit enim aute dolor dolor. Mollit aute ea aute anim eiusmod eiusmod adipisicing non aliquip velit consequat sunt consectetur. Lorem mollit consequat nulla sit proident culpa in Lorem nisi."
-    //         },
-    //         {
-    //             "title": "Техногогия производства",
-    //             "body": "Et mollit sunt duis sint voluptate officia commodo tempor excepteur do sint consectetur. Labore cillum ullamco Lorem in. Aute voluptate exercitation dolore minim esse elit enim aute dolor dolor. Mollit aute ea aute anim eiusmod eiusmod adipisicing non aliquip velit consequat sunt consectetur. Lorem mollit consequat nulla sit proident culpa in Lorem nisi."
-    //         },
-    //         {
-    //             "title": "Управление проектами",
-    //             "body": "Et mollit sunt duis sint voluptate officia commodo tempor excepteur do sint consectetur. Labore cillum ullamco Lorem in. Aute voluptate exercitation dolore minim esse elit enim aute dolor dolor. Mollit aute ea aute anim eiusmod eiusmod adipisicing non aliquip velit consequat sunt consectetur. Lorem mollit consequat nulla sit proident culpa in Lorem nisi."
-    //         },
-    //         {
-    //             "title": "Экономика энергетики",
-    //             "body": "Et mollit sunt duis sint voluptate officia commodo tempor excepteur do sint consectetur. Labore cillum ullamco Lorem in. Aute voluptate exercitation dolore minim esse elit enim aute dolor dolor. Mollit aute ea aute anim eiusmod eiusmod adipisicing non aliquip velit consequat sunt consectetur. Lorem mollit consequat nulla sit proident culpa in Lorem nisi."
-    //         },
-    //         {
-    //             "title": "Области специализации",
-    //             "body": "Et mollit sunt duis sint voluptate officia commodo tempor excepteur do sint consectetur. Labore cillum ullamco Lorem in. Aute voluptate exercitation dolore minim esse elit enim aute dolor dolor. Mollit aute ea aute anim eiusmod eiusmod adipisicing non aliquip velit consequat sunt consectetur. Lorem mollit consequat nulla sit proident culpa in Lorem nisi."
-    //         }
-    //
-    //     ]
-    // }
 $(document).ready(function(){
 
 
@@ -52,8 +15,7 @@ $(document).ready(function(){
                 throw new Error('Error during fetch');
             })
             .then(function (data) {
-    console.log(data);
-
+                console.log(data);
                 const templateScript = $('services').html();
                 const template = Handlebars.compile(templateScript);
                 const html = template(data);
@@ -61,7 +23,7 @@ $(document).ready(function(){
             })
     };
 
-    createInfoBlock();
+
 
     // $.ajax({
     //     url: 'data.json'
@@ -82,7 +44,7 @@ $(document).ready(function(){
   $('.collapsible.expandable').collapsible();
 
 
-
+    createInfoBlock();
 });
 
 
