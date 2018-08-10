@@ -13,11 +13,14 @@ $(document).ready(function(){
   }).done(function (data) {
       var json = JSON.parse(data);
       console.log(json);
+      var templateScript = $('services').html();
+      var template = Handlebars.compile(templateScript);
+      var context = json;
+      var html    = template(context);
   })
 
-    // const templateScript = $('services').html();
-    // const template = Handlebars.compile(templateScript);
-    // console.log(template);
+
+
 
 });
 
