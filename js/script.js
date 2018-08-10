@@ -16,7 +16,7 @@ $(document).ready(function(){
             })
             .then(function (data) {
 
-                const templateScript = $('services').html();
+                const templateScript = $('#services').html();
                 console.log(templateScript);
                 const template = Handlebars.compile(templateScript);
                 const html = template(data);
