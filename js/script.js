@@ -1,24 +1,26 @@
 
 (function(){
 $(document).ready(function(){
-  $('.sidenav').sidenav({
+
+    var container = $('#container');
+
+    $.ajax({
+        url: 'data.json'
+    }).done(function (data) {
+        var json = JSON.parse(data);
+        console.log(json);
+        var templateScript = $('services').html();
+        var template = Handlebars.compile(templateScript);
+        var html    = template(json);
+        container.append(html);
+    })
+
+    $('.sidenav').sidenav({
     menuWidth: 250,
     closeOnClick: true   
   });
   $('.carousel').carousel();
   $('.collapsible.expandable').collapsible();
-
-  $.ajax({
-      url: 'data.json'
-  }).done(function (data) {
-      var json = JSON.parse(data);
-      console.log(json);
-      var templateScript = $('services').html();
-      var template = Handlebars.compile(templateScript);
-      var context = json;
-      var html    = template(context);
-  })
-
 
 
 
