@@ -2,7 +2,12 @@
 (function(){
 
 $(document).ready(function(){
-
+    $('.sidenav').sidenav({
+        menuWidth: 250,
+        closeOnClick: true
+    });
+    $('.carousel').carousel();
+    $('.collapsible.expandable').collapsible();
 
     function createInfoBlock () {
         const container = $('#container');
@@ -24,29 +29,9 @@ $(document).ready(function(){
             })
     }
 
-
-
-
-    $('.sidenav').sidenav({
-    menuWidth: 250,
-    closeOnClick: true   
-  });
-  $('.carousel').carousel();
-  $('.collapsible.expandable').collapsible();
-
-
     createInfoBlock();
 });
 
 
 })();
-// $.ajax({
-//     url: 'data.json'
-// }).done(function (data) {
-//     var json = JSON.parse(data);
-//     console.log(json);
-//     var templateScript = $('services').html();
-//     var template = Handlebars.compile(templateScript);
-//     var html    = template(json);
-//     container.append(html);
-// })
+
