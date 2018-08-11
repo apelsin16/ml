@@ -66,7 +66,7 @@
         <counts>
           <entry key="css" value="141" />
           <entry key="html" value="76" />
-          <entry key="js" value="2" />
+          <entry key="js" value="5" />
           <entry key="json" value="69" />
         </counts>
       </usages-collector>
@@ -75,7 +75,7 @@
           <entry key="CSS" value="141" />
           <entry key="HTML" value="76" />
           <entry key="JSON" value="69" />
-          <entry key="JavaScript" value="2" />
+          <entry key="JavaScript" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -87,7 +87,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="203">
+                <state relative-caret-position="-4">
                   <caret line="86" column="60" selection-start-line="86" selection-start-column="60" selection-end-line="86" selection-end-column="60" />
                   <folding>
                     <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -103,8 +103,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="667">
-                  <caret line="29" column="6" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+                <state relative-caret-position="447">
+                  <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
                 </state>
               </provider>
             </entry>
@@ -209,12 +209,12 @@
       <workItem from="1533891452131" duration="12633000" />
       <workItem from="1534000216233" duration="826000" />
       <workItem from="1534001429212" duration="7488000" />
-      <workItem from="1534010302351" duration="2525000" />
+      <workItem from="1534010302351" duration="3329000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24085000" />
+    <option name="totallyTimeSpent" value="24889000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -264,7 +264,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
+        <state relative-caret-position="-4">
           <caret line="86" column="60" selection-start-line="86" selection-start-column="60" selection-end-line="86" selection-end-column="60" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -281,8 +281,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="29" column="6" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+        <state relative-caret-position="447">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
         </state>
       </provider>
     </entry>
