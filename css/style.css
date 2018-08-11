@@ -2,6 +2,14 @@
     width: 240px;
 }
 
-.collapsible-header {
-    font-size: 1rem;
+.main-header {
+    font-weight: 600;
+    margin: 0;
 }
+
+.collapsible-header {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
