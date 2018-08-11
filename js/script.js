@@ -1,10 +1,7 @@
 
 (function(){
 
-// $(document).ready(function(){
-//
-//
-// });
+$(document).ready(function(){
     $('.sidenav').sidenav({
         menuWidth: 250,
         closeOnClick: true
@@ -32,6 +29,9 @@
             })
     };
     createInfoBlock();
+
+
+});
 
 })();
 
