@@ -8,7 +8,7 @@ $(document).ready(function(){
     });
     $('.carousel').carousel();
     $('.collapsible.expandable').collapsible();
-
+    $('.tabs').tabs();
 
 });
 
