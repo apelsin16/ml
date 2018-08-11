@@ -13,3 +13,22 @@
     margin: 0;
 }
 
+.tabs {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.tab {
+    border-bottom: transparent 2px solid;
+}
+
+.tab:active,
+.tab:hover,
+.tab:active {
+    border-bottom: #f6b2b5 2px solid;
+}
+.indicator {
+    display: none;
+}
+
