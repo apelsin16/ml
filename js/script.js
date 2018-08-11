@@ -9,6 +9,9 @@ $(document).ready(function(){
     $('.carousel').carousel();
     $('.collapsible.expandable').collapsible();
 
+
+});
+
     function createInfoBlock () {
         const container = $('#container');
 
@@ -23,15 +26,13 @@ $(document).ready(function(){
 
                 const templateScript = document.getElementById("services").innerHTML;
                 const template = Handlebars.compile(templateScript);
-                console.log(template);
+
                 const html = template(data);
                 container.append(html);
             })
     }
 
     createInfoBlock();
-});
-
 
 })();
 
