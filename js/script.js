@@ -11,7 +11,7 @@ $(document).ready(function(){
     $('.collapsible.expandable').collapsible();
     $('.tabs').tabs();
     console.log('Doc ready');
-    $('div.tab-content').hide().first().show();
+    // $('div.tab-content').hide().first().show();
 
     // function tabs () {
     //     event.preventDefault();
@@ -47,10 +47,6 @@ function createInfoBlock () {
             })
     };
 createInfoBlock();
-console.log("createInfoblock loaded");
-
-
-
-
+console.log("createInfoblock1 loaded");
 })();
 
