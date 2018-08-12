@@ -1,9 +1,9 @@
 
 (function(){
 
-$(document).ready(function(){
-    console.log('Doc ready');
-});
+// $(document).ready(function(){
+//     console.log('Doc ready');
+// });
     $('.sidenav').sidenav({
         menuWidth: 250,
         closeOnClick: true
