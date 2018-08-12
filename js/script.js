@@ -9,20 +9,20 @@ $(document).ready(function(){
     });
     $('.carousel').carousel();
     $('.collapsible.expandable').collapsible();
-    // $('.tabs').tabs();
+    $('.tabs').tabs();
     console.log('Doc ready');
     $('div.tab-content').hide().first().show();
 
-    function tabs () {
-        event.preventDefault();
-        $(this).toggleClass('active');
-        $(this).siblings('.tab').removeClass('active');
-        var divID = $(this).children().attr('href');
-        $('div.tab-content').hide();
-        $(divID).show();
-    }
-    $('.tab').click(tabs);
-    $('.tab').focus(tabs);
+    // function tabs () {
+    //     event.preventDefault();
+    //     $(this).toggleClass('active');
+    //     $(this).siblings('.tab').removeClass('active');
+    //     var divID = $(this).children().attr('href');
+    //     $('div.tab-content').hide();
+    //     $(divID).show();
+    // }
+    // $('.tab').click(tabs);
+    // $('.tab').focus(tabs);
 });
 
 
