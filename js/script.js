@@ -11,8 +11,6 @@ $(document).ready(function(){
     $('.collapsible.expandable').collapsible();
     // $('.tabs').tabs();
     console.log('Doc ready');
-});
-
     $('div.tab-content').hide().first().show();
 
     function tabs () {
@@ -25,6 +23,9 @@ $(document).ready(function(){
     }
     $('.tab').click(tabs);
     $('.tab').focus(tabs);
+});
+
+
 
 function createInfoBlock () {
         const container = $('#container');
