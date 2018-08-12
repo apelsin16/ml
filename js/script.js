@@ -2,6 +2,8 @@
 (function(){
 
 $(document).ready(function(){
+    console.log('Doc ready');
+});
     $('.sidenav').sidenav({
         menuWidth: 250,
         closeOnClick: true
@@ -9,8 +11,6 @@ $(document).ready(function(){
     $('.carousel').carousel();
     $('.collapsible.expandable').collapsible();
     $('.tabs').tabs();
-    console.log('Doc ready');
-});
 
 function createInfoBlock () {
         const container = $('#container');
