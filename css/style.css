@@ -16,11 +16,12 @@
 
 .tabs .tab a,
 .tab-link {
-    color: #424242;
+    color: #000000;
     opacity: 0.7;
 }
 
-.tabs .tab a:hover {
+.tabs .tab a:hover,
+.active {
     opacity: 1;
 }
 
@@ -37,7 +38,7 @@
 .tab:active,
 .tab:hover,
 .tab:active {
-    border-bottom: #f6b2b5 2px solid;
+    border-bottom: #424242 2px solid;
 }
 .indicator {
     display: none;
