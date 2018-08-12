@@ -1,9 +1,8 @@
 
 (function(){
 
-// $(document).ready(function(){
-//     console.log('Doc ready');
-// });
+$(document).ready(function(){
+    createInfoBlock();
     $('.sidenav').sidenav({
         menuWidth: 250,
         closeOnClick: true
@@ -11,6 +10,9 @@
     $('.carousel').carousel();
     $('.collapsible.expandable').collapsible();
     $('.tabs').tabs();
+    console.log('Doc ready');
+});
+
 
 function createInfoBlock () {
         const container = $('#container');
@@ -31,7 +33,7 @@ function createInfoBlock () {
                 container.append(html);
             })
     };
-    createInfoBlock();
+
 console.log("createInfoblock loaded");
 
 
