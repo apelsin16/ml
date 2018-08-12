@@ -39,7 +39,7 @@
 .tab:active,
 .tab:hover,
 .tab:active {
-    border-bottom: #424242 2px solid;
+    border-bottom: #aaaaaa 2px solid;
 }
 .indicator {
     display: none;
