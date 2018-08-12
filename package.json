@@ -1,0 +1,21 @@
+{
+  "name": "mykolyash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parser",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apelsin16/mykolyash.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apelsin16/mykolyash/issues"
+  },
+  "homepage": "https://github.com/apelsin16/mykolyash#readme",
+  "dependencies": {}
+}
