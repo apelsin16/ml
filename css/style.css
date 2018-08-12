@@ -16,7 +16,7 @@
 
 .tabs .tab a,
 .tab-link {
-    color: #000000;
+    color: inherit;
     opacity: 0.7;
 }
 
