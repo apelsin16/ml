@@ -2,7 +2,7 @@
 (function(){
 
 $(document).ready(function(){
-    createInfoBlock();
+
     $('.sidenav').sidenav({
         menuWidth: 250,
         closeOnClick: true
@@ -33,7 +33,7 @@ function createInfoBlock () {
                 container.append(html);
             })
     };
-
+createInfoBlock();
 console.log("createInfoblock loaded");
 
 
