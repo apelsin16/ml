@@ -9,6 +9,8 @@ $(document).ready(function(){
     $('.carousel').carousel();
     $('.collapsible.expandable').collapsible();
     $('.tabs').tabs();
+    console.log(Doc ready)
+});
     function createInfoBlock () {
         const container = $('#container');
 
@@ -29,10 +31,10 @@ $(document).ready(function(){
             })
     };
     createInfoBlock();
+console.log("createInfoblock loaded")
 
 
 
-});
 
 })();
 
