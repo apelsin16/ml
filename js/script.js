@@ -9,9 +9,10 @@ $(document).ready(function(){
     $('.carousel').carousel();
     $('.collapsible.expandable').collapsible();
     $('.tabs').tabs();
-    console.log(Doc ready)
+    console.log('Doc ready');
 });
-    function createInfoBlock () {
+
+function createInfoBlock () {
         const container = $('#container');
 
         fetch('data.json')
@@ -31,7 +32,7 @@ $(document).ready(function(){
             })
     };
     createInfoBlock();
-console.log("createInfoblock loaded")
+console.log("createInfoblock loaded");
 
 
 
