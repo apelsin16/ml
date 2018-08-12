@@ -1,4 +1,22 @@
 {
+    "menu": [
+        {
+            "title": "Главная",
+            "link": "index.html"
+        },
+        {
+            "title": "О нас",
+            "link": "about.html"
+        },
+        {
+            "title": "Наши проекты",
+            "link": "project.html"
+        },
+        {
+            "title": "Контакты",
+            "link": "contacts.html"
+        }
+    ],
     "articles": [
         {
             "id": "1",
